@@ -1,0 +1,13 @@
+pandas>=2.0
+numpy>=1.25
+tqdm>=4.67
+requests>=2.32
+biopython>=1.85
+matplotlib
+scipy
+pyyaml>=6.0
+torch==2.3.0
+transformers==4.39.3
+tokenizers==0.15.2
+safetensors==0.4.3
+huggingface-hub==0.23.2

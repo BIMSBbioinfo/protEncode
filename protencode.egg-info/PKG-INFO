@@ -1,0 +1,26 @@
+Metadata-Version: 2.4
+Name: protencode
+Version: 0.1.0
+Summary: Different encoding/embedding types of mutations in amino acid sequences
+Author-email: Chris Oldnall <christopheraldous.oldnall@mdc-berlin.de>
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas>=2.0
+Requires-Dist: numpy>=1.25
+Requires-Dist: tqdm>=4.67
+Requires-Dist: requests>=2.32
+Requires-Dist: biopython>=1.85
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+Requires-Dist: pyyaml>=6.0
+Requires-Dist: torch==2.3.0
+Requires-Dist: transformers==4.39.3
+Requires-Dist: tokenizers==0.15.2
+Requires-Dist: safetensors==0.4.3
+Requires-Dist: huggingface-hub==0.23.2
+Dynamic: license-file
+
+# Protein Encoding
+
+Repository relating to generation of encoding of amino acid muations.
