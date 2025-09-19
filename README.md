@@ -1,3 +1,3 @@
-# Attention-guided selection of protein language embedding dimensions enhances downstream predictive tasks.
+# Protein Encoding
 
-Repository relating to the pipeline on using attention-weighted PLMs.
+Repository relating to generation of encoding of amino acid muations.
