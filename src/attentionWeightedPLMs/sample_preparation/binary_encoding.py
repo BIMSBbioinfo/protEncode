@@ -9,6 +9,10 @@ def createBinaryMatrix(Samples, output_dir):
                                                 values='binary_variant', aggfunc='first').fillna(0)
     binary_matrix_df.columns.name = None
     binary_matrix_df = binary_matrix_df.reset_index()
-    print(f"Saving to {output_dir}.")
-    binary_matrix_df.to_csv(f"{output_dir}/sampleFrames/binaryEncoding.csv", index=None)
+    # Ensure the sampleFrames directory exists
+    save_dir = os.path.join(output_dir, "sampleFrames")
+    os.makedirs(save_dir, exist_ok=True)
+    out_path = os.path.join(save_dir, "binaryEncoding.csv")
+    print(f"Saving to {out_path}.")
+    binary_matrix_df.to_csv(out_path, index=None)
     return binary_matrix_df

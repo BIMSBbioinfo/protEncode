@@ -13,6 +13,8 @@ def processVariantParts(df, variant_column='variant'):
         pd.DataFrame: DataFrame with additional columns 'wtAA', 'pos', 'mutAA', and the count of unmatched variants.
     """
     def extract_variant_parts(variant):
+        if pd.isna(variant):
+            return None
         match = re.match(r"^p\.(.)([0-9]+)(.)$", variant)
         if match:
             return match.groups()
