@@ -31,3 +31,5 @@ protencode/sequence_preparation/mutationSequenceMerge.py
 protencode/sequence_preparation/pipeline.py
 protencode/sequence_preparation/uniProtFasta.py
 protencode/sequence_preparation/variantProcessor.py
+protencode/utils/__init__.py
+protencode/utils/download_test_data.py
